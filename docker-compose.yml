@@ -1,0 +1,26 @@
+version: '3.6'
+
+services:
+
+  prometheus:
+    image: prom/prometheus:v3.1.0
+    ports:
+      - 9090:9090
+    restart: always
+
+  alertmanager:
+    image: prom/alertmanager:v0.28.0
+    ports:
+      - 9093:9093
+    restart: always
+
+  cadvisor:
+    image: gcr.io/cadvisor/cadvisor
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    ports:
+      - 8080:8080
+    restart: always

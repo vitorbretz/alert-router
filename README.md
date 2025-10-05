@@ -12,7 +12,9 @@ O Alert Router é uma aplicação desenvolvida em Python com suporte a Docker, p
 
 
 🚀 Como Executar o Projeto
+
 1️⃣ Clonar o repositório
+
 git clone https://github.com/vitorbretz/alert-router.git
 cd alert-router
 

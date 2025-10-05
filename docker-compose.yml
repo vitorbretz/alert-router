@@ -7,6 +7,8 @@ services:
     ports:
       - 9090:9090
     restart: always
+    volumes:
+      - ./prometheus/:/etc/prometheus
 
   alertmanager:
     image: prom/alertmanager:v0.28.0

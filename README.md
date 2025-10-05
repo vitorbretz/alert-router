@@ -10,22 +10,6 @@ O Alert Router é uma aplicação desenvolvida em Python com suporte a Docker, p
 
 🚨 Alertmanager
 
-📦 PostgreSQL (caso usado no ambiente de monitoramento)
-
-🧩 Estrutura do Projeto
-.
-├── alert-router.py          # Lógica principal do roteamento de alertas
-├── Dockerfile               # Definição da imagem da aplicação
-├── docker-compose.yml       # Orquestração dos containers (app, Prometheus, Alertmanager)
-├── prometheus/              # Configurações do Prometheus
-│   ├── prometheus.yml
-│   └── rules/
-├── alertmanager/            # Configurações do Alertmanager
-│   └── alertmanager.yml
-├── requirements.txt         # Dependências Python
-├── test-payload.json        # Payload de teste de alerta
-├── result.json              # Resultado de execução ou logs gerados
-└── __pycache__/             # Cache Python
 
 🚀 Como Executar o Projeto
 1️⃣ Clonar o repositório
